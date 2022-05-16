@@ -1,12 +1,12 @@
 import express from "express";
 import {
-  handleGetUser,
-  handlePostUser,
+  handleGetEmployee,
+  handlePostEmployee,
 } from "../controllers/employeeController.js";
 
 const router = express.Router();
 
-router.get("/", handleGetUser);
-router.post("/", handlePostUser);
+router.get("/", handleGetEmployee);
+router.post("/", handlePostEmployee);
 
 export default router;
