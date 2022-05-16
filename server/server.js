@@ -19,9 +19,9 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors());
 
-app.use("/api/v1/employee", employeeRouter);
-app.use("/api/v1/class", classRouter);
-app.use("/api/v1/activity", activityRouter);
+app.use("/api/v1/employees", employeeRouter);
+app.use("/api/v1/classes", classRouter);
+app.use("/api/v1/activities", activityRouter);
 
 app.get("/", (req, res) => res.send("Working"));
 
