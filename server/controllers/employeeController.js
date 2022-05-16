@@ -10,6 +10,7 @@ export const handlePostEmployee = async (req, res) => {
     designation: req.body.designation || "Employee",
     offday: req.body.offday,
     phone: req.body.phone || "N/A",
+    officeTime: req.body.officeTime || "N/A",
   };
   try {
     const employee = new Employee(employeeData);

@@ -6,10 +6,9 @@ export const handleGetActivity = async (req, res) => {
 };
 export const handlePostActivity = async (req, res) => {
   const activityData = {
-    name: req.body.name || "Annonymous",
-    designation: req.body.designation || "Activity",
-    offday: req.body.offday,
-    phone: req.body.phone || "N/A",
+    name: req.body.name || "N/A",
+    duration: req.body.duration || "0hr",
+    details: req.body.details || "N/A",
   };
   try {
     const activity = new Activity(activityData);

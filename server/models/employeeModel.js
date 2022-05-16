@@ -9,6 +9,10 @@ const employeeSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  officeTime: {
+    type: String,
+    required: true,
+  },
   offday: {
     type: String,
     required: true,
